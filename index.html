@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Matthew Gregory — Product Content Strategist</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --navy: #0f1f35;
+    --navy-mid: #1b3a5c;
+    --accent: #2e75b6;
+    --accent-light: #e8f1fa;
+    --text: #1a1a1a;
+    --text-mid: #444;
+    --text-light: #777;
+    --border: #e0e4ea;
+    --white: #ffffff;
+    --bg: #f7f8fa;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    color: var(--text);
+    background: var(--bg);
+  }
+
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  /* NAV */
+  nav {
+    position: sticky;
+    top: 0;
+    background: var(--white);
+    border-bottom: 1px solid var(--border);
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 56px;
+    z-index: 100;
+  }
+  .nav-name {
+    font-family: 'DM Serif Display', serif;
+    font-size: 17px;
+    color: var(--navy);
+    letter-spacing: -0.2px;
+  }
+  .nav-links { display: flex; gap: 2rem; }
+  .nav-links a {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--text-mid);
+    text-decoration: none;
+  }
+  .nav-links a:hover { color: var(--accent); }
+
+  /* HERO */
+  .hero {
+    background: var(--navy);
+    padding: 80px 2rem 72px;
+    text-align: left;
+  }
+  .hero-inner { max-width: 780px; margin: 0 auto; }
+
+  .hero-label {
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 20px;
+    opacity: 0.9;
+  }
+
+  .hero h1 {
+    font-family: 'DM Serif Display', serif;
+    font-size: clamp(38px, 6vw, 58px);
+    line-height: 1.1;
+    color: var(--white);
+    letter-spacing: -1px;
+    margin-bottom: 24px;
+  }
+
+  .hero h1 em {
+    font-style: italic;
+    color: #7eb8e8;
+  }
+
+  .hero-bio {
+    font-size: 17px;
+    line-height: 1.75;
+    color: rgba(255,255,255,0.72);
+    max-width: 600px;
+    margin-bottom: 36px;
+  }
+
+  .hero-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .tag {
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.15);
+    color: rgba(255,255,255,0.75);
+    font-size: 13px;
+    padding: 5px 14px;
+    border-radius: 100px;
+  }
+
+  /* SECTION WRAPPER */
+  .section {
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 64px 2rem;
+  }
+
+  .section-label {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 8px;
+  }
+
+  .section-title {
+    font-family: 'DM Serif Display', serif;
+    font-size: 28px;
+    color: var(--navy);
+    letter-spacing: -0.4px;
+    margin-bottom: 40px;
+  }
+
+  /* DIVIDER */
+  .divider { border: none; border-top: 1px solid var(--border); }
+
+  /* WORK CARDS */
+  .work-grid {
+    display: grid;
+    gap: 20px;
+  }
+
+  .work-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 28px 32px;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .work-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 4px;
+    height: 100%;
+    background: var(--accent);
+    opacity: 0;
+    transition: opacity 0.2s;
+  }
+
+  .work-card:hover {
+    border-color: #b8d0e8;
+    box-shadow: 0 4px 20px rgba(46,117,182,0.08);
+  }
+
+  .work-card:hover::before { opacity: 1; }
+
+  .card-domain {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 10px;
+  }
+
+  .card-title {
+    font-family: 'DM Serif Display', serif;
+    font-size: 22px;
+    color: var(--navy);
+    letter-spacing: -0.3px;
+    margin-bottom: 12px;
+    line-height: 1.3;
+  }
+
+  .card-desc {
+    font-size: 15px;
+    color: var(--text-mid);
+    line-height: 1.7;
+    margin-bottom: 20px;
+  }
+
+  .card-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 20px;
+  }
+
+  .chip {
+    background: var(--accent-light);
+    color: var(--navy-mid);
+    font-size: 12px;
+    font-weight: 500;
+    padding: 4px 12px;
+    border-radius: 100px;
+  }
+
+  .card-link {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--accent);
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .card-link svg {
+    width: 14px;
+    height: 14px;
+    flex-shrink: 0;
+  }
+
+  .card-link:hover { text-decoration: underline; }
+
+  /* SKILLS */
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+  }
+
+  .skill-group {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 20px 22px;
+  }
+
+  .skill-group-title {
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 12px;
+  }
+
+  .skill-group ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .skill-group li {
+    font-size: 14px;
+    color: var(--text-mid);
+    padding-left: 14px;
+    position: relative;
+  }
+
+  .skill-group li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 9px;
+    width: 5px;
+    height: 5px;
+    background: var(--accent);
+    border-radius: 50%;
+    opacity: 0.5;
+  }
+
+  /* ABOUT */
+  .about-block {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 32px;
+  }
+
+  .about-block p {
+    font-size: 16px;
+    color: var(--text-mid);
+    line-height: 1.8;
+    margin-bottom: 16px;
+  }
+
+  .about-block p:last-child { margin-bottom: 0; }
+
+  .about-block strong { color: var(--navy); font-weight: 500; }
+
+  /* CONTACT */
+  .contact-strip {
+    background: var(--navy);
+    padding: 48px 2rem;
+    text-align: center;
+  }
+
+  .contact-strip h2 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 26px;
+    color: var(--white);
+    margin-bottom: 8px;
+    letter-spacing: -0.3px;
+  }
+
+  .contact-strip p {
+    font-size: 15px;
+    color: rgba(255,255,255,0.6);
+    margin-bottom: 24px;
+  }
+
+  .contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+
+  .contact-btn {
+    display: inline-block;
+    padding: 10px 24px;
+    border-radius: 100px;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: opacity 0.15s;
+  }
+
+  .contact-btn:hover { opacity: 0.85; text-decoration: none; }
+
+  .contact-btn.primary {
+    background: var(--accent);
+    color: var(--white);
+  }
+
+  .contact-btn.secondary {
+    background: rgba(255,255,255,0.1);
+    color: rgba(255,255,255,0.85);
+    border: 1px solid rgba(255,255,255,0.2);
+  }
+
+  /* FOOTER */
+  footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 13px;
+    color: var(--text-light);
+    background: var(--white);
+    border-top: 1px solid var(--border);
+  }
+
+  @media (max-width: 600px) {
+    .nav-links { gap: 1rem; }
+    .work-card { padding: 22px 20px; }
+    .hero { padding: 56px 1.25rem 52px; }
+    .section { padding: 48px 1.25rem; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <span class="nav-name">Matthew Gregory</span>
+  <div class="nav-links">
+    <a href="#work">Work</a>
+    <a href="#skills">Skills</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+    <p class="hero-label">Portfolio</p>
+    <h1>Product content<br>that <em>ships</em> and sells.</h1>
+    <p class="hero-bio">
+      3+ years building content systems, symbol libraries, and sales enablement assets at SmartDraw — a SaaS diagramming platform used by millions. I do the compliance research, the keyword data work, and the actual execution. No handoffs.
+    </p>
+    <div class="hero-tags">
+      <span class="tag">Product Marketing</span>
+      <span class="tag">Sales Enablement</span>
+      <span class="tag">Content Strategy</span>
+      <span class="tag">SEO & Keyword Research</span>
+      <span class="tag">SaaS</span>
+      <span class="tag">B2B Enterprise</span>
+    </div>
+  </div>
+</section>
+
+<!-- WORK -->
+<div id="work">
+  <div class="section">
+    <p class="section-label">Selected Work</p>
+    <h2 class="section-title">Shipped product, live on the platform</h2>
+
+    <div class="work-grid">
+
+      <!-- Card 1 -->
+      <div class="work-card">
+        <p class="card-domain">Public Safety · Government Sales</p>
+        <h3 class="card-title">Crime Scene & Accident Reconstruction Vertical</h3>
+        <p class="card-desc">
+          Built out SmartDraw's forensic content vertical from scratch to support government and law enforcement sales. Researched CSI methodology, NFPA standards, and legal compliance requirements, then designed and shipped blood spatter libraries with forensic accuracy, articulated body symbols, weapon and drug asset libraries, and updated accident reconstruction content. Directly supported enterprise deal closures with public safety departments.
+        </p>
+        <div class="card-chips">
+          <span class="chip">CSI Research</span>
+          <span class="chip">Compliance</span>
+          <span class="chip">Enterprise Sales Support</span>
+          <span class="chip">Symbol Design</span>
+        </div>
+        <a class="card-link" href="https://www.smartdraw.com/whats-new/new-crime-scene-accident-reconstruction-symbols.htm" target="_blank" rel="noopener">
+          View live release
+          <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="work-card">
+        <p class="card-domain">Architecture · CAD · Construction</p>
+        <h3 class="card-title">Floor Plan Elevation & Architecture Content</h3>
+        <p class="card-desc">
+          Designed and shipped a comprehensive floor plan elevation symbol library for architecture and AutoCAD users, covering residential and commercial use cases. Research involved ADA compliance standards, architectural drawing conventions, and competitor gap analysis. Content supports SmartDraw's positioning as a Visio and AutoCAD alternative for professional floor planning.
+        </p>
+        <div class="card-chips">
+          <span class="chip">ADA Compliance</span>
+          <span class="chip">Architecture Research</span>
+          <span class="chip">Competitor Analysis</span>
+          <span class="chip">UX Asset Management</span>
+        </div>
+        <a class="card-link" href="https://www.smartdraw.com/whats-new/new-floor-plan-elevation-content.htm" target="_blank" rel="noopener">
+          View live release
+          <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="work-card">
+        <p class="card-domain">Floor Planning · Commercial</p>
+        <h3 class="card-title">750+ New Floor Plan Symbols</h3>
+        <p class="card-desc">
+          Researched, designed, and shipped over 750 new floor plan symbols across residential and commercial categories including healthcare, retail, commercial kitchens, bars and restaurants, spas and salons, warehouses, and office environments. Work involved category research, findability improvements, and modernizing legacy assets for usability and visual quality.
+        </p>
+        <div class="card-chips">
+          <span class="chip">Scale Content Build</span>
+          <span class="chip">Information Architecture</span>
+          <span class="chip">User Research</span>
+          <span class="chip">CMS Management</span>
+        </div>
+        <a class="card-link" href="https://www.smartdraw.com/whats-new/new-floor-plan-symbols.htm" target="_blank" rel="noopener">
+          View live release
+          <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<hr class="divider">
+
+<!-- SKILLS -->
+<div id="skills">
+  <div class="section">
+    <p class="section-label">Capabilities</p>
+    <h2 class="section-title">Tools & skills</h2>
+
+    <div class="skills-grid">
+      <div class="skill-group">
+        <p class="skill-group-title">Product & Project</p>
+        <ul>
+          <li>Jira, Trello, Asana</li>
+          <li>Agile / Scrum</li>
+          <li>User story mapping</li>
+          <li>Stakeholder management</li>
+          <li>Feature research</li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <p class="skill-group-title">Content & SEO</p>
+        <ul>
+          <li>Google Keyword Planner</li>
+          <li>SEMrush</li>
+          <li>Google Search Console</li>
+          <li>CMS management</li>
+          <li>AI Prompt Engineering</li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <p class="skill-group-title">Design & Diagramming</p>
+        <ul>
+          <li>Adobe Creative Cloud</li>
+          <li>Figma</li>
+          <li>AutoCAD / SmartDraw</li>
+          <li>UX asset management</li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <p class="skill-group-title">Research & Data</p>
+        <ul>
+          <li>SQL (reporting queries)</li>
+          <li>Portal analytics</li>
+          <li>NFPA / ADA / CSI standards</li>
+          <li>Competitor research</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr class="divider">
+
+<!-- ABOUT -->
+<div id="about">
+  <div class="section">
+    <p class="section-label">Background</p>
+    <h2 class="section-title">About me</h2>
+    <div class="about-block">
+      <p>
+        I'm a product content strategist based in <strong>Houston, TX</strong>, currently working at SmartDraw Software where I've spent 3+ years building the content infrastructure that powers enterprise sales and product adoption across specialized verticals.
+      </p>
+      <p>
+        My work lives at the intersection of product, marketing, and sales. I dig into primary compliance documentation — NFPA codes, ADA guidelines, CSI methodology — do the keyword and SQL data work, and translate all of it into content that ships and gets used. I've worked directly with sales teams to close enterprise deals and with CSMs to support active accounts.
+      </p>
+      <p>
+        Before SaaS, I spent time in <strong>banking and retail operations</strong> — roles that built the customer-first instincts and cross-functional communication skills I bring to product work today. I'm open to remote roles and relocation within Texas.
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- CONTACT -->
+<section class="contact-strip" id="contact">
+  <h2>Let's work together</h2>
+  <p>Open to product marketing, content strategy, and product operations roles at SaaS companies.</p>
+  <div class="contact-links">
+    <a class="contact-btn primary" href="mailto:magregory1998@outlook.com">magregory1998@outlook.com</a>
+    <a class="contact-btn secondary" href="https://linkedin.com/in/" target="_blank">LinkedIn</a>
+  </div>
+</section>
+
+<footer>
+  &copy; 2026 Matthew Aaron Gregory III &nbsp;&middot;&nbsp; Houston, TX &nbsp;&middot;&nbsp; Product Content Strategist
+</footer>
+
+</body>
+</html>
