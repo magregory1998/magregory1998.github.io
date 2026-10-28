@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 850" role="img" aria-labelledby="t d">
+<title id="t">Architectural planning concept visualization</title><desc id="d">A diagrammatic architectural floor plan with room labels, measurement marks, and a planning grid. This is an illustrative graphic, not a SmartDraw product screenshot.</desc>
+<defs>
+ <pattern id="grid" width="34" height="34" patternUnits="userSpaceOnUse"><path d="M34 0H0V34" fill="none" stroke="#244b35" stroke-opacity=".12" stroke-width="1"/></pattern>
+ <pattern id="micro" width="8.5" height="8.5" patternUnits="userSpaceOnUse"><path d="M8.5 0H0V8.5" fill="none" stroke="#244b35" stroke-opacity=".08" stroke-width=".6"/></pattern>
+ <filter id="shadow"><feDropShadow dx="0" dy="13" stdDeviation="17" flood-color="#31513b" flood-opacity=".14"/></filter>
+</defs>
+<rect width="1200" height="850" fill="#dcf59a"/><rect width="1200" height="850" fill="url(#micro)"/>
+<g font-family="Arial,Helvetica,sans-serif" fill="#254a31"><text x="64" y="78" font-size="18" font-weight="700" letter-spacing="6">FIG. 01 / SPATIAL SYSTEM</text><text x="64" y="113" font-size="13" letter-spacing="3">PLANNING STUDY · CONCEPTUAL</text></g>
+<g transform="translate(150,162)" filter="url(#shadow)"><rect x="0" y="0" width="880" height="568" rx="4" fill="#f7f8e7"/><rect x="0" y="0" width="880" height="568" fill="url(#grid)"/>
+ <g fill="none" stroke="#234735" stroke-linejoin="round"><path d="M65 75 H815 V499 H65 Z" stroke-width="11"/><path d="M357 75 V245 M357 310 V499 M357 250 H815 M600 75 V250 M600 250 V499 M357 365 H600" stroke-width="8"/>
+ <path d="M65 270 H357" stroke-width="8"/><path d="M357 440 H600" stroke-width="8"/><path d="M65 365 H357" stroke-width="8"/>
+ </g>
+ <g fill="#aec7a1" stroke="#234735" stroke-width="3"><rect x="100" y="110" width="170" height="96" rx="4"/><rect x="395" y="105" width="120" height="78" rx="40"/><rect x="635" y="100" width="118" height="118" rx="3"/><rect x="635" y="284" width="134" height="81" rx="4"/><rect x="95" y="401" width="150" height="60" rx="4"/></g>
+ <g fill="none" stroke="#234735" stroke-width="3"><path d="M357 310v-67a67 67 0 0 0 -67 67"/><path d="M600 337v-65a65 65 0 0 0 -65 65"/><path d="M357 440h-58a58 58 0 0 1 58-58"/><path d="M600 440h-58a58 58 0 0 1 58-58"/><path d="M65 365h57a57 57 0 0 0 -57 -57"/>
+ <path d="M116 152h138M116 161h138 M664 118h65 M664 180h65M664 125v54" stroke-width="2"/><circle cx="442" cy="143" r="31"/><path d="M442 112v62M411 143h62" stroke-width="1.5"/></g>
+ <g font-family="Arial,Helvetica,sans-serif" fill="#325341" font-size="14" text-anchor="middle" letter-spacing="2"><text x="203" y="234">STUDIO</text><text x="479" y="218">LOUNGE</text><text x="705" y="236">WORK</text><text x="198" y="347">ENTRY</text><text x="482" y="351">HALL</text><text x="705" y="446">MEETING</text><text x="206" y="485">SERVICE</text></g>
+ <g stroke="#537d61" stroke-width="1.5" fill="none"><path d="M65 34H815M65 22v24M815 22v24"/><path d="M30 75V499M19 75h23M19 499h23"/></g><g font-family="Arial,Helvetica,sans-serif" fill="#537d61" font-size="14" letter-spacing="1"><text x="439" y="26" text-anchor="middle">48′ – 0″</text><text transform="translate(22,286) rotate(-90)" text-anchor="middle">32′ – 0″</text></g>
+</g>
+<g fill="#234735" font-family="Arial,Helvetica,sans-serif"><text x="1042" y="786" font-size="12" font-weight="700" text-anchor="end" letter-spacing="4">EXPLORE THE SYSTEM →</text></g>
+</svg>

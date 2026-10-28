@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="480" viewBox="0 0 920 480" role="img" aria-labelledby="title desc">
+<style>
+.loose-part{transition:translate .6s ease;}
+svg:hover #wheel-left{translate:-20px -20px;}
+svg:hover #wheel-right{translate:27px 25px;}
+svg:hover #bumper{translate:8px 32px;}
+svg:hover #mirror{translate:32px -25px;}
+@media(prefers-reduced-motion:reduce){.loose-part{transition:none}}
+</style><title id="title">Damaged vehicle components</title><desc id="desc">Top view of a car with loose parts arranged nearby, built as separate vector objects to illustrate movable vehicle debris.</desc>
+<rect width="920" height="480" fill="#e6f3d1"/><g stroke="#a2ba92" stroke-width="1" opacity=".3"><path d="M0 60H920M0 120H920M0 180H920M0 240H920M0 300H920M0 360H920M0 420H920M75 0V480M150 0V480M225 0V480M300 0V480M375 0V480M450 0V480M525 0V480M600 0V480M675 0V480M750 0V480M825 0V480"/></g>
+<g font-family="monospace" fill="#2f4d35"><text x="37" y="42" font-size="15" letter-spacing="2">DAMAGED VEHICLE / COMPONENT STUDY</text><text x="40" y="456" font-size="12">illustrative vector assembly • individual objects are editable in source artwork</text></g>
+<g id="vehicle-body" stroke="#1f3929" stroke-width="5" stroke-linejoin="round">
+<path d="M220 200Q220 155 266 152H584Q623 153 641 199L661 285Q665 336 606 340H264Q221 338 218 297Z" fill="#527762"/>
+<path d="M299 172H546L574 217H280Z" fill="#bfe4d5"/><path d="M282 224H587V291H282Z" fill="#a4bcb2"/><path d="M304 301H561L582 326H280Z" fill="#476b55"/>
+<path d="M426 227V289" stroke-width="3"/><path d="M281 240H586" stroke-width="3"/><path d="M250 210L280 224M608 220L591 227" stroke-width="3"/>
+<path d="M623 200L647 222L642 257L617 249L626 230L608 224Z" fill="#e4efda" stroke="#be613d" stroke-width="4"/>
+</g>
+<g id="wheel-left" class="loose-part" transform="translate(-30,-40)"><rect x="213" y="230" width="38" height="67" rx="12" fill="#243328" stroke="#527762" stroke-width="4"/><path d="M224 242V285M238 242V285" stroke="#d7e9c2" stroke-width="3"/></g>
+<g id="wheel-right" class="loose-part" transform="translate(68,28) rotate(18 658 300)"><rect x="630" y="260" width="39" height="68" rx="12" fill="#243328" stroke="#527762" stroke-width="4"/><path d="M643 272V316M656 272V316" stroke="#d7e9c2" stroke-width="3"/></g>
+<g id="bumper" class="loose-part" transform="translate(18,65) rotate(-15 458 366)"><path d="M300 342Q425 361 575 342L589 354Q475 388 291 355Z" fill="#d9fb97" stroke="#274d30" stroke-width="5"/></g>
+<g id="mirror" class="loose-part" transform="translate(80,-85) rotate(25 665 140)"><path d="M656 151L674 145L693 160L683 175L661 169Z" fill="#b1d8c3" stroke="#274d30" stroke-width="4"/></g>
+<g stroke="#547d54" stroke-width="2" stroke-dasharray="7 7" opacity=".65"><path d="M650 220L740 173M591 342L744 396M245 235L108 175"/></g>
+<g font-family="monospace" font-size="13" fill="#345b3f"><text x="743" y="168">MIRROR</text><text x="743" y="394">BUMPER</text><text x="40" y="165">WHEEL</text></g>
+</svg>

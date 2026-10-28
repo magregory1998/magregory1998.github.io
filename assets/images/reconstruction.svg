@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 850" role="img" aria-labelledby="t d">
+<title id="t">Accident reconstruction conceptual road-diagram illustration</title><desc id="d">An original diagrammatic road intersection showing scaled geometry, dashed lane lines, two simplified vehicles and annotation markers, not a SmartDraw screenshot.</desc>
+<defs><pattern id="grid" width="35" height="35" patternUnits="userSpaceOnUse"><path d="M35 0H0V35" stroke="#81584b" stroke-opacity=".1" fill="none"/></pattern></defs>
+<rect width="1200" height="850" fill="#ffd1bd"/><rect width="1200" height="850" fill="url(#grid)"/>
+<g font-family="Arial,Helvetica,sans-serif" fill="#5c3b36"><text x="64" y="76" font-size="18" font-weight="700" letter-spacing="6">FIG. 03 / RECONSTRUCTION</text><text x="64" y="110" font-size="13" letter-spacing="3">SCALED GEOMETRY · CONCEPTUAL</text></g>
+<g transform="translate(100,161)"><rect width="1000" height="555" rx="8" fill="#fff8f0"/>
+ <g fill="#e9dad0" stroke="#583d37" stroke-width="4"><path d="M0 178H1000V377H0Z"/><path d="M388 0H607V555H388Z"/></g>
+ <g stroke="#fff8f0" stroke-width="5" fill="none" stroke-dasharray="42 32"><path d="M0 277H388M607 277H1000M497 0V178M497 377V555"/></g>
+ <g stroke="#583d37" stroke-width="2.5" fill="none" stroke-dasharray="4 13"><path d="M57 139H333M660 139H938M57 414H333M660 414H938"/></g>
+ <g fill="#5c3b36" font-family="Arial,Helvetica,sans-serif" font-size="12" letter-spacing="2"><text x="55" y="129">ROAD EDGE</text><text x="660" y="129">ROAD EDGE</text><text x="422" y="42">NORTHBOUND</text></g>
+ <g transform="translate(320 246) rotate(-12)"><rect x="-71" y="-28" width="142" height="56" rx="19" fill="#d96a50" stroke="#4b3734" stroke-width="4"/><rect x="-24" y="-24" width="60" height="48" rx="10" fill="#ffd1bd" stroke="#4b3734" stroke-width="3"/><rect x="-45" y="-33" width="26" height="10" rx="4" fill="#4b3734"/><rect x="27" y="-33" width="25" height="10" rx="4" fill="#4b3734"/><rect x="-45" y="23" width="26" height="10" rx="4" fill="#4b3734"/><rect x="27" y="23" width="25" height="10" rx="4" fill="#4b3734"/></g>
+ <g transform="translate(516 380) rotate(78)"><rect x="-74" y="-29" width="148" height="58" rx="21" fill="#86a99d" stroke="#4b3734" stroke-width="4"/><rect x="-22" y="-24" width="62" height="48" rx="10" fill="#f4f7e5" stroke="#4b3734" stroke-width="3"/><rect x="-43" y="-34" width="27" height="10" rx="4" fill="#4b3734"/><rect x="26" y="-34" width="28" height="10" rx="4" fill="#4b3734"/><rect x="-43" y="24" width="27" height="10" rx="4" fill="#4b3734"/><rect x="26" y="24" width="28" height="10" rx="4" fill="#4b3734"/></g>
+ <g stroke="#d96a50" stroke-width="5" stroke-dasharray="10 12" fill="none"><path d="M182 260Q367 272 461 304Q519 321 541 346"/><path d="M515 491Q499 415 478 329"/></g>
+ <g stroke="#5c3b36" fill="none"><circle cx="460" cy="306" r="56" stroke-width="2" stroke-dasharray="10 8"/><path d="M460 206V240 M460 370v44M360 306h39M519 306h44" stroke-width="2"/></g><circle cx="460" cy="306" r="12" fill="#d96a50"/>
+ <g font-family="Arial,Helvetica,sans-serif" fill="#583d37" font-size="14" letter-spacing="1"><text x="620" y="473">POINT OF INTEREST</text><path d="M607 466L511 330" fill="none" stroke="#583d37" stroke-width="2"/><text x="54" y="512">01 — VEHICLE PATH</text><text x="54" y="535">02 — SPATIAL ANNOTATION</text></g>
+</g><text x="1101" y="793" text-anchor="end" fill="#5c3b36" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="700" letter-spacing="4">RECONSTRUCT THE DETAILS →</text>
+</svg>

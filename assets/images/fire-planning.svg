@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 850" role="img" aria-labelledby="t d">
+<title id="t">Fire and emergency planning conceptual workflow graphic</title><desc id="d">An original illustration showing a building grid, exit paths, fire equipment symbols, and five planning workflows, not a SmartDraw screenshot.</desc>
+<defs><pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#42618e" stroke-opacity=".13"/></pattern></defs>
+<rect width="1200" height="850" fill="#ccddff"/><rect width="1200" height="850" fill="url(#grid)"/>
+<g font-family="Arial,Helvetica,sans-serif" fill="#263f75"><text x="65" y="76" font-size="18" font-weight="700" letter-spacing="6">FIG. 02 / SAFETY SYSTEM</text><text x="65" y="111" font-size="13" letter-spacing="3">FIVE WORKFLOWS · CONCEPTUAL</text></g>
+<g transform="translate(108,164)">
+ <rect x="0" y="0" width="984" height="550" rx="9" fill="#f5f7ff"/>
+ <g stroke="#2f497e" fill="none" stroke-width="8" stroke-linejoin="round"><path d="M58 57H669V491H58Z"/><path d="M58 200H669M250 57V200M460 57V200M250 200V355M460 200V355M58 355H669M250 355V491M460 355V491"/></g>
+ <g stroke="#f5f7ff" stroke-width="14"><path d="M250 117V161M365 200h47M460 393v49M200 355h44M515 355h44M669 277v62"/></g>
+ <g fill="none" stroke="#ef6547" stroke-width="10" stroke-dasharray="20 19" stroke-linecap="round" stroke-linejoin="round"><path d="M148 120V277H366V423H550V319H669"/></g><path d="m633 304 37 15-37 15" fill="none" stroke="#ef6547" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+ <g fill="#ef6547"><circle cx="149" cy="120" r="21"/><circle cx="366" cy="423" r="19"/><circle cx="551" cy="319" r="19"/></g><g fill="#fff" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="700" text-anchor="middle"><text x="149" y="127">1</text><text x="366" y="430">2</text><text x="551" y="326">3</text></g>
+ <g stroke="#2f497e" stroke-width="3" fill="none"><rect x="103" y="389" width="48" height="62" rx="6"/><path d="M127 395v48M112 409h30"/><circle cx="364" cy="113" r="33"/><path d="M350 113h28M364 99v28"/><path d="M527 94h78M527 109h78M527 124h51"/></g>
+ <g fill="#2f497e" font-family="Arial,Helvetica,sans-serif" font-size="13" letter-spacing="2"><text x="77" y="180">ZONE A</text><text x="292" y="179">ZONE B</text><text x="494" y="180">ZONE C</text><text x="80" y="332">ZONE D</text><text x="286" y="333">ZONE E</text><text x="492" y="332">ZONE F</text></g>
+ <g transform="translate(711,52)" font-family="Arial,Helvetica,sans-serif" fill="#263f75"><text font-size="14" font-weight="700" letter-spacing="4">WORKFLOW MAP</text>
+  <g font-size="14"><g transform="translate(0,55)"><circle cx="11" cy="-4" r="6" fill="#ef6547"/><text x="29">Inspection</text></g><g transform="translate(0,119)"><circle cx="11" cy="-4" r="6" fill="#ef6547"/><text x="29">Investigation</text></g><g transform="translate(0,183)"><circle cx="11" cy="-4" r="6" fill="#ef6547"/><text x="29">Pre-incident planning</text></g><g transform="translate(0,247)"><circle cx="11" cy="-4" r="6" fill="#ef6547"/><text x="29">Evacuation</text></g><g transform="translate(0,311)"><circle cx="11" cy="-4" r="6" fill="#ef6547"/><text x="29">Life safety</text></g></g>
+  <path d="M0 354H208" stroke="#93a7c9"/><text y="390" font-size="13" letter-spacing="1">STANDARDS → SCOPE</text><text y="413" font-size="13" letter-spacing="1">→ SHIPPED WORK</text></g>
+</g>
+<text x="1083" y="791" text-anchor="end" fill="#263f75" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="700" letter-spacing="4">FOLLOW THE WORKFLOW →</text>
+</svg>
