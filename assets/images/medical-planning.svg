@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="850" viewBox="0 0 1200 850" role="img" aria-labelledby="title desc">
+<title id="title">Illustrative medical planning symbol kit and schematic</title>
+<desc id="desc">An original, conceptual hospital planning graphic showing editable medical symbols alongside a small healthcare floor plan. Not an actual SmartDraw screenshot or a claim about the exact symbols shipped.</desc>
+<defs>
+ <pattern id="papergrid" width="25" height="25" patternUnits="userSpaceOnUse"><path d="M25 0H0V25" fill="none" stroke="#7fb4a5" opacity=".18" stroke-width="1"/></pattern>
+ <pattern id="linegrid" width="6.25" height="6.25" patternUnits="userSpaceOnUse"><path d="M6.25 0H0V6.25" fill="none" stroke="#7fb4a5" opacity=".08" stroke-width=".8"/></pattern>
+ <filter id="float"><feDropShadow dx="0" dy="12" stdDeviation="18" flood-color="#244737" flood-opacity=".13"/></filter>
+ <g id="bed" stroke="#2c5548" stroke-width="5" stroke-linejoin="round" fill="none">
+  <rect x="-37" y="-69" width="74" height="138" rx="8" fill="#eef7ec"/>
+  <rect x="-30" y="-57" width="60" height="31" rx="8" fill="#d3e5da" stroke-width="3"/>
+  <path d="M-30-12H30M-30 50H30" stroke-width="2" opacity=".6"/>
+  <path d="M-44-75V75M44-75V75" stroke-width="6"/>
+  <circle cx="-44" cy="-80" r="5" fill="#2c5548"/><circle cx="44" cy="-80" r="5" fill="#2c5548"/>
+ </g>
+ <g id="monitor" fill="none" stroke="#2c5548" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+  <rect x="-46" y="-40" width="92" height="69" rx="7" fill="#d7eddd"/>
+  <path d="M-35-7H-18L-8-24L4 12L16-7H35" stroke="#e77c4c" stroke-width="4"/>
+  <path d="M0 29V57M-24 57H24"/>
+ </g>
+ <g id="wheelchair" fill="none" stroke="#2c5548" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+  <circle cx="-13" cy="26" r="30" fill="#e8f4ec"/>
+  <circle cx="-13" cy="26" r="9"/><circle cx="44" cy="39" r="7" fill="#d9fc91"/>
+  <path d="M-7-45V-15H28L43 32M-7-15L-20 26M-7-45H17"/>
+  <circle cx="-7" cy="-57" r="10" fill="#2c5548" stroke="none"/>
+ </g>
+ <g id="cabinet" fill="none" stroke="#2c5548" stroke-width="4" stroke-linejoin="round">
+  <rect x="-43" y="-47" width="86" height="94" rx="4" fill="#e5f2e8"/>
+  <path d="M-43 0H43"/><circle cx="-27" cy="-18" r="3" fill="#2c5548"/><circle cx="-27" cy="25" r="3" fill="#2c5548"/>
+ </g>
+</defs>
+<rect width="1200" height="850" fill="#d8f1d9"/><rect width="1200" height="850" fill="url(#papergrid)"/><rect width="1200" height="850" fill="url(#linegrid)"/>
+<g font-family="Arial,Helvetica,sans-serif" fill="#294a40">
+<text x="58" y="74" font-size="18" font-weight="700" letter-spacing="5">FIG. 04 / HEALTHCARE PLANNING</text>
+<text x="60" y="110" font-size="14" letter-spacing="3">CLINICAL SYMBOLS + SPATIAL WORKFLOWS / CONCEPTUAL</text>
+</g>
+<g filter="url(#float)">
+<rect x="57" y="151" width="756" height="605" rx="8" fill="#f9fcf6" stroke="#c2d9c7" stroke-width="2"/>
+<rect x="840" y="151" width="305" height="605" rx="8" fill="#f9fcf6" stroke="#c2d9c7" stroke-width="2"/>
+</g>
+<g transform="translate(93 205)">
+ <rect width="683" height="499" fill="#f4f9f2"/>
+ <g stroke="#456b57" stroke-width="7" fill="none" stroke-linecap="square" stroke-linejoin="miter">
+  <path d="M0 0H683V499H0V0M0 211H683M0 345H683M230 0V211M455 0V211M230 345V499M455 345V499"/>
+ </g>
+ <g stroke="#f4f9f2" stroke-width="11"><path d="M92 211H161M298 211H356M536 211H612M298 345H365M536 345H604"/></g>
+ <g stroke="#4b7865" stroke-width="3" fill="none"><path d="M92 211V151A60 60 0 0 1 152 211M298 211V151A60 60 0 0 1 358 211M536 211V151A60 60 0 0 1 596 211M298 345V405A60 60 0 0 0 358 345M536 345V405A60 60 0 0 0 596 345"/></g>
+ <g fill="#294b40" font-family="Arial,Helvetica,sans-serif" font-size="13" font-weight="700" letter-spacing="2" text-anchor="middle">
+  <text x="115" y="35">TREATMENT 01</text><text x="342" y="35">TREATMENT 02</text><text x="568" y="35">IMAGING</text>
+  <text x="115" y="380">NURSE STATION</text><text x="340" y="380">RECEPTION</text><text x="568" y="380">SUPPLY</text>
+  <text x="342" y="283" fill="#597966" font-size="16" letter-spacing="4">CLINICAL CORRIDOR</text>
+ </g>
+ <g transform="translate(113 115) scale(.71)"><use href="#bed"/></g>
+ <g transform="translate(338 115) scale(.71)"><use href="#bed"/></g>
+ <g transform="translate(548 115) scale(.75)"><use href="#monitor"/></g>
+ <g transform="translate(650 116) scale(.54)"><use href="#cabinet"/></g>
+ <g transform="translate(106 441) scale(.72)"><use href="#monitor"/></g>
+ <g transform="translate(342 435) scale(.68)"><use href="#wheelchair"/></g>
+ <g transform="translate(565 430) scale(.64)"><use href="#cabinet"/></g>
+ <g fill="none" stroke="#749786" stroke-width="2"><path d="M0-15H683M0-24V-5M683-24V-5M-16 0V499M-24 0H-5M-24 499H-5"/></g>
+ <g fill="#567c69" font-family="Arial,Helvetica,sans-serif" font-size="13" text-anchor="middle"><text x="342" y="-26" letter-spacing="2">CARE AREA / SCHEMATIC</text></g>
+</g>
+<g font-family="Arial,Helvetica,sans-serif" fill="#294a40">
+ <text x="865" y="187" font-size="14" font-weight="700" letter-spacing="3">SYMBOL SYSTEM</text>
+ <text x="865" y="213" font-size="11" letter-spacing="1.6" fill="#5a7869">ILLUSTRATIVE COMPONENTS</text>
+ <path d="M863 231H1122" stroke="#c3d7c5"/>
+</g>
+<g transform="translate(909 330) scale(.65)"><use href="#bed"/></g>
+<g transform="translate(1056 331) scale(.72)"><use href="#monitor"/></g>
+<g transform="translate(909 508) scale(.75)"><use href="#wheelchair"/></g>
+<g transform="translate(1056 512) scale(.72)"><use href="#cabinet"/></g>
+<g fill="#284d3e" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="700" text-anchor="middle" letter-spacing="1.3">
+ <text x="909" y="414">TREATMENT</text><text x="1056" y="414">MONITORING</text><text x="909" y="604">ACCESSIBILITY</text><text x="1056" y="604">STORAGE</text>
+</g>
+<g stroke="#c4daca"><path d="M850 429H1132M850 621H1132"/></g>
+<rect x="861" y="650" width="264" height="74" rx="6" fill="#294838"/>
+<g fill="#e5f7df" font-family="Arial,Helvetica,sans-serif"><text x="881" y="681" font-size="13" font-weight="700" letter-spacing="2">FROM CONTENT GAP</text><text x="881" y="706" font-size="13" font-weight="700" letter-spacing="2">TO USABLE LIBRARIES</text></g>
+<text x="56" y="800" fill="#3d654f" font-family="Arial,Helvetica,sans-serif" font-size="11" letter-spacing="2">ORIGINAL ILLUSTRATION — NOT AN ACTUAL PRODUCT SCREENSHOT</text>
+<text x="1146" y="801" fill="#3d654f" font-family="Arial,Helvetica,sans-serif" font-size="11" text-anchor="end" letter-spacing="2">MG / PRODUCT CONTENT</text>
+</svg>

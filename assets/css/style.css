@@ -33,3 +33,19 @@
 @media(min-width:840px){.parts-demo:hover img{transform:scale(1.015)}}
 @media(max-width:900px){.mini-grid{grid-template-columns:1fr 1fr}.contact-layout{grid-template-columns:1fr;gap:35px}}
 @media(max-width:620px){.mini-grid{grid-template-columns:1fr}.mini-card{min-height:auto}.form-two{grid-template-columns:1fr}.before-after{grid-template-columns:1fr}.contact-section .section-heading h2{font-size:clamp(52px,12vw,76px)}.contact-aside a.contact-email{font-size:21px}}
+
+/* Medical case-study addition */
+.project-card--medical .project-image{background:#d8f1d9}
+.project-card--medical .card-tag{background:#d6eee3;color:#285341}
+.impact-ribbon{margin-top:24px;padding:24px 28px;background:#203529;color:#f4f9eb;border-radius:16px;display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;align-items:stretch}
+.impact-ribbon>a{color:inherit;text-decoration:none;border-right:1px solid rgba(237,255,225,.16);padding:4px 20px 4px 0;display:flex;flex-direction:column;gap:5px}
+.impact-ribbon>a:last-of-type{border-right:0}
+.impact-ribbon strong{font-size:clamp(30px,4vw,46px);line-height:1.08;letter-spacing:-.06em;color:#d9fc91}
+.impact-ribbon span{font-size:12px;color:#dce6d7;line-height:1.5}
+.impact-ribbon a:hover span{text-decoration:underline}
+.impact-note{grid-column:1/-1;font:500 10px/1.65 'DM Mono',monospace;color:#becfb8;border-top:1px solid rgba(237,255,225,.16);padding-top:14px}
+.medical-compare{margin:18px 0 34px;background:#e8f3e9;border:1px solid #cbdcca;border-radius:12px;padding:24px 27px}
+.medical-compare strong{display:block;color:#284936;font-size:17px;line-height:1.4;margin-bottom:10px}
+.medical-compare p{margin:0;color:#536554;font-size:14px;line-height:1.65}
+@media(max-width:750px){.impact-ribbon{grid-template-columns:1fr;padding:19px}.impact-ribbon>a{border-right:0;border-bottom:1px solid rgba(237,255,225,.16);padding:10px 4px 15px}.impact-ribbon>a:last-of-type{border-bottom:0}.impact-ribbon strong{font-size:38px}.workbench-tabs{grid-template-columns:repeat(4,minmax(0,1fr))}.workbench-tab{font-size:9px;letter-spacing:0;padding:10px 3px}.impact-note{padding:10px 4px 0}}
+@media(min-width:751px){.workbench-tabs{grid-template-columns:repeat(4,minmax(0,1fr))}}
