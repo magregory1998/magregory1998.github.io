@@ -461,3 +461,26 @@ body{background:var(--paper)}
  .writing-card-art span{font-size:23px}
  .writing-card-art strong{font-size:12px;padding:7px 9px}
 }
+
+
+/* Writing samples: three published comparison articles */
+.writing-sample-card--firescene{background:#f5dda0}
+.writing-sample-card--firescene .writing-card-art strong{background:#eac3fa}
+@media(min-width:1150px){
+ .writing-samples-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+ .writing-card-art{padding:12px 18px 4px;gap:7px;min-height:98px}
+ .writing-card-art span{font-size:clamp(21px,1.9vw,29px)}
+ .writing-card-art strong{font-size:13px;padding:7px 9px}
+ .writing-card-head{padding:20px 19px 0;align-items:flex-start;font-size:9px}
+ .writing-card-head .writing-published{font-size:9px;padding:5px 8px}
+ .writing-card-body{padding:21px 21px 24px}
+ .writing-card-body h3{font-size:clamp(27px,2.25vw,34px)}
+}
+@media(min-width:661px) and (max-width:1149px){
+ .writing-sample-card--firescene{grid-column:1/-1}
+ .writing-sample-card--firescene .writing-card-art{justify-content:center}
+ .writing-sample-card--firescene .writing-card-art span{font-size:clamp(32px,4vw,50px)}
+}
+@media(max-width:390px){
+ .writing-sample-card--firescene .writing-card-art span{font-size:clamp(21px,6.2vw,25px)}
+}
