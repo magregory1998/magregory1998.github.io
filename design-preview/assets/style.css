@@ -447,3 +447,17 @@ body{background:var(--paper)}
  .writing-detail-hero h1{font-size:clamp(52px,12vw,76px)}
  .writing-method{padding:70px 0}
 }
+
+
+/* Keep long product names inside the comparison art at every width. */
+.writing-card-art span{font-size:clamp(23px,2.75vw,42px);min-width:0;white-space:nowrap}
+.writing-card-art strong{flex:0 0 auto}
+@media(max-width:660px){
+ .writing-card-art{gap:8px;padding:6px 19px 0}
+ .writing-card-art span{font-size:clamp(24px,6.8vw,39px)}
+ .writing-card-art strong{font-size:13px;padding:8px 11px}
+}
+@media(max-width:360px){
+ .writing-card-art span{font-size:23px}
+ .writing-card-art strong{font-size:12px;padding:7px 9px}
+}
