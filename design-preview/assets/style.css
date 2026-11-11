@@ -290,3 +290,34 @@ body{background:var(--paper)}
 @media(max-width:600px){
   .about-photo-tile{max-width:min(360px,100%);}
 }
+
+
+/* Crisp native-resolution portrait crops. Deliberately match each image's actual aspect ratio. */
+.hero-photo img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center 17%;
+  image-rendering:auto;
+  filter:none!important;
+  mix-blend-mode:normal!important;
+}
+.about-photo-tile{
+  width:min(100%,440px);
+  max-width:440px;
+  overflow:hidden;
+}
+.about-photo-tile img{
+  width:100%;
+  height:auto;
+  aspect-ratio:710 / 888;
+  object-fit:cover;
+  object-position:center center;
+  display:block;
+  filter:none!important;
+  mix-blend-mode:normal!important;
+  image-rendering:auto;
+}
+@media(max-width:600px){
+  .about-photo-tile{max-width:min(390px,100%);}
+}
