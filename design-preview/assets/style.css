@@ -172,3 +172,6 @@ dialog.viewer{width:min(1120px,96vw);max-width:none;max-height:92vh;border:0;bor
   .audit-process-context{grid-template-columns:1fr;gap:10px}
   .audit-about-context .shell{grid-template-columns:1fr;gap:12px}
 }
+
+.audit-method-note{font-size:12px;line-height:1.65;color:#5b685b;max-width:750px;margin:19px 0 10px}
+.audit-contact-note + .audit-contact-note{margin-top:8px}
