@@ -484,3 +484,10 @@ body{background:var(--paper)}
 @media(max-width:390px){
  .writing-sample-card--firescene .writing-card-art span{font-size:clamp(21px,6.2vw,25px)}
 }
+
+
+.audit-related-writing{margin:20px 0 34px;padding:21px 24px;border-radius:16px;background:#f3e5fc;border:1px solid #d9bff0;color:#26212a}
+.audit-related-writing>strong{font-size:10px;letter-spacing:.105em;color:#68468d;display:block;margin-bottom:12px}
+.audit-related-writing p{font-size:14px;line-height:1.7;margin:0 0 12px!important;color:#40354a}
+.audit-related-writing a{font-size:14px;font-weight:800;text-decoration:underline;text-underline-offset:3px;color:#4e2a75}
+.audit-related-writing a:hover{color:#251039}
