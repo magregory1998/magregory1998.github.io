@@ -380,3 +380,70 @@ body{background:var(--paper)}
   .home .hero-tile-four strong{font-size:10px}
   .home .hero-tile-four span{font-size:16px}
 }
+
+
+/* 2026-11-11 — published product-writing samples */
+.writing-section{background:#fff9ea;border-top:1px solid #e8d9b7;border-bottom:1px solid #e8d9b7}
+.writing-intro{display:flex;align-items:end;justify-content:space-between;gap:24px;margin-bottom:32px}
+.writing-intro-copy{max-width:770px}
+.writing-intro h2{font-size:clamp(42px,5vw,66px);font-weight:850;line-height:1.02;letter-spacing:-.055em;margin:15px 0 20px}
+.writing-intro h2 em{font-style:normal;color:#8f5bc3}
+.writing-intro p{font-size:16px;line-height:1.78;max-width:720px;color:#535044;margin:0}
+.writing-index-link{font-weight:800;color:#282122;border:1px solid #342d2d;border-radius:99px;padding:13px 18px;white-space:nowrap;transition:background .2s ease,color .2s ease}
+.writing-index-link:hover{background:#202322;color:#fff}
+.writing-samples-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+.writing-sample-card{position:relative;display:flex;flex-direction:column;min-width:0;border:1px solid rgba(27,26,27,.13);border-radius:24px;overflow:hidden;box-shadow:0 9px 0 rgba(30,26,28,.055)}
+.writing-sample-card--arcsite{background:#ddc7fa}
+.writing-sample-card--edraw{background:#c5e4fa}
+.writing-card-head{display:flex;align-items:center;justify-content:space-between;gap:13px;padding:22px 27px 0;color:#302735;font-size:11px;font-weight:850;letter-spacing:.1em;text-transform:uppercase}
+.writing-card-head .writing-published{font-size:10px;border:1px solid rgba(28,25,30,.25);border-radius:99px;padding:6px 10px;letter-spacing:.045em;background:rgba(255,255,255,.28);text-align:center}
+.writing-card-art{display:flex;align-items:center;gap:11px;min-height:114px;padding:7px 28px 0;overflow:hidden}
+.writing-card-art span{font-weight:900;font-size:clamp(34px,4vw,55px);letter-spacing:-.065em;line-height:1}
+.writing-card-art strong{font-size:clamp(14px,2vw,23px);font-weight:850;letter-spacing:-.045em;border:2px solid #212322;border-radius:99px;padding:9px 13px;transform:rotate(-9deg)}
+.writing-sample-card--arcsite .writing-card-art strong{background:#f9e09b}
+.writing-sample-card--edraw .writing-card-art strong{background:#a7eab9}
+.writing-card-body{display:flex;flex:1;flex-direction:column;gap:0;padding:19px 28px 26px;background:#fffdfa;border-top:1px solid rgba(27,26,27,.13)}
+.writing-card-body h3{font-size:clamp(28px,2.8vw,38px);line-height:1.08;letter-spacing:-.05em;margin:0 0 13px}
+.writing-card-body p{font-size:14px;line-height:1.73;color:#55544f;margin:0 0 22px}
+.writing-card-tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:auto;padding-bottom:20px}
+.writing-card-tags span{font-size:10px;letter-spacing:.025em;font-weight:800;border:1px solid #d9d4c8;background:#f5f1e8;border-radius:99px;padding:7px 10px;color:#4c4a42}
+.writing-card-link{display:inline-flex;align-items:center;justify-content:space-between;gap:12px;color:#fff;background:#202322;border:1px solid #202322;border-radius:12px;padding:15px 18px;font-size:14px;font-weight:850;transition:transform .2s ease,background .2s ease}
+.writing-card-link:hover{background:#47344f;transform:translateY(-2px)}
+.writing-card-link::after{content:"↗";font-size:20px;line-height:1}
+.writing-footnote{margin-top:21px;color:#666356;font-size:12px;line-height:1.6;max-width:750px}
+.writing-page .writing-detail-hero{position:relative;overflow:hidden;padding:94px 0 90px;background:#1b201d;color:#fffdf3}
+.writing-detail-hero::after{content:"VS";font-size:clamp(190px,30vw,440px);font-weight:950;letter-spacing:-.13em;color:rgba(200,171,245,.10);position:absolute;right:6vw;top:-52px;line-height:1;pointer-events:none}
+.writing-detail-hero .shell{position:relative;z-index:1}
+.writing-detail-hero .eyebrow{color:#c8abf5}
+.writing-detail-hero h1{font-size:clamp(58px,8.3vw,112px);line-height:.97;letter-spacing:-.07em;max-width:1050px;margin:18px 0 25px}
+.writing-detail-hero h1 em{font-style:normal;color:#c8abf5}
+.writing-detail-hero p{font-size:clamp(17px,1.8vw,22px);line-height:1.68;color:#d8dcd3;max-width:770px}
+.writing-detail-hero .writing-hero-labels{display:flex;flex-wrap:wrap;gap:9px;margin-top:29px}
+.writing-detail-hero .writing-hero-labels span{border:1px solid #636b61;color:#f3efd9;padding:10px 15px;border-radius:99px;font-size:11px;letter-spacing:.09em;font-weight:800;text-transform:uppercase}
+.writing-page .writing-section{padding-top:85px;padding-bottom:90px}
+.writing-method{background:#f5f2ec;padding:83px 0 90px}
+.writing-method h2{font-size:clamp(38px,5vw,60px);letter-spacing:-.055em;line-height:1.1;max-width:780px;margin:14px 0 30px}
+.writing-method-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:17px}
+.writing-method-item{border-radius:18px;background:#fffdfa;border:1px solid #e2dfd6;padding:25px}
+.writing-method-item span{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:12px;color:#795ea4;font-weight:800}
+.writing-method-item h3{font-size:23px;letter-spacing:-.04em;line-height:1.2;margin:17px 0 13px}
+.writing-method-item p{font-size:14px;color:#565a52;line-height:1.8;margin:0}
+@media(max-width:900px){
+ .writing-intro{display:block}
+ .writing-index-link{display:inline-flex;margin-top:20px}
+ .writing-card-art span{font-size:clamp(32px,4vw,50px)}
+}
+@media(max-width:660px){
+ .writing-samples-grid,.writing-method-grid{grid-template-columns:1fr}
+ .writing-section{padding:67px 0}
+ .writing-intro h2{font-size:clamp(42px,10.6vw,58px)}
+ .writing-intro p{font-size:14px}
+ .writing-card-art{min-height:95px}
+ .writing-card-art span{font-size:clamp(32px,9vw,48px)}
+ .writing-card-body{padding:21px 23px 23px}
+ .writing-card-head{padding:19px 23px 0}
+ .writing-page .writing-detail-hero{padding:67px 0}
+ .writing-page .writing-detail-hero::after{top:15px;right:22px;font-size:160px}
+ .writing-detail-hero h1{font-size:clamp(52px,12vw,76px)}
+ .writing-method{padding:70px 0}
+}
